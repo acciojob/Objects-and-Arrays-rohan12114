@@ -5,12 +5,14 @@ const person = {
       age: 80
     };
 const team = players;
-const team1 = players.slice();
+const team1 = [...players];
+const cap1 = {...person}
 
 //let copiedPerson = Object.assign({}, person);
-let cap1 = Object.assign({}, person);
+
 
 window.players = players;
 window.person = person;
 window.team = team;
 window.team1 = team1;
+window.cap1=cap1;
